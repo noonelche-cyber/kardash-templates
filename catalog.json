@@ -1,0 +1,687 @@
+{
+  "format": "kardash-catalog",
+  "schemaVersion": 1,
+  "models": [
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "recette",
+      "version": 1,
+      "name": "Recette de cuisine",
+      "description": "Photo, ingrédients, quantités et étapes.",
+      "icon": "cake",
+      "color": "#F4DEC2",
+      "baseType": "recipe",
+      "fields": [
+        {
+          "id": "photo",
+          "label": "Photo",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "portions",
+          "label": "Portions",
+          "type": "number",
+          "default": "",
+          "key": "servings"
+        },
+        {
+          "id": "prep",
+          "label": "Préparation (min)",
+          "type": "number",
+          "default": "",
+          "key": "prepminutes"
+        },
+        {
+          "id": "cuisson",
+          "label": "Cuisson (min)",
+          "type": "number",
+          "default": "",
+          "key": "cookminutes"
+        },
+        {
+          "id": "temperature",
+          "label": "Température (°C)",
+          "type": "number",
+          "default": "",
+          "key": "temperature"
+        },
+        {
+          "id": "ingredients",
+          "label": "Ingrédients et quantités",
+          "type": "text",
+          "default": "",
+          "key": "ingredients"
+        },
+        {
+          "id": "etapes",
+          "label": "Étapes",
+          "type": "text",
+          "default": "",
+          "key": "steps"
+        },
+        {
+          "id": "source",
+          "label": "Source",
+          "type": "web",
+          "default": ""
+        },
+        {
+          "id": "notes",
+          "label": "Notes",
+          "type": "text",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "courses",
+      "version": 1,
+      "name": "Courses",
+      "description": "Un article et sa quantité par ligne ; cases à cocher dans la Kard.",
+      "icon": "box",
+      "color": "#D8E7CD",
+      "baseType": "shopping",
+      "fields": [
+        {
+          "id": "articles",
+          "label": "Articles et quantités",
+          "type": "text",
+          "default": "",
+          "key": "shoppingitems"
+        },
+        {
+          "id": "photo",
+          "label": "Photo du produit",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "magasin",
+          "label": "Magasin",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "notes",
+          "label": "Notes",
+          "type": "text",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "tache",
+      "version": 1,
+      "name": "Tâche / rappel",
+      "description": "Organiser une tâche et son échéance. La répétition est une indication, sans alarme automatique.",
+      "icon": "calendar",
+      "color": "#E6DBF2",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "action",
+          "label": "À faire",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "echeance",
+          "label": "Échéance",
+          "type": "datetime-local",
+          "default": ""
+        },
+        {
+          "id": "repetition",
+          "label": "Répétition souhaitée",
+          "type": "text",
+          "default": "Aucune"
+        },
+        {
+          "id": "etat",
+          "label": "État",
+          "type": "text",
+          "default": "À faire"
+        },
+        {
+          "id": "notes",
+          "label": "Notes",
+          "type": "text",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "rendez-vous",
+      "version": 1,
+      "name": "Rendez-vous",
+      "description": "Date, heure, adresse, contact et documents.",
+      "icon": "calendar",
+      "color": "#CEDFEC",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date et heure",
+          "type": "datetime-local",
+          "default": ""
+        },
+        {
+          "id": "lieu",
+          "label": "Adresse",
+          "type": "postaladdress",
+          "default": ""
+        },
+        {
+          "id": "contact",
+          "label": "Contact",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "documents",
+          "label": "Documents",
+          "type": "file",
+          "default": ""
+        },
+        {
+          "id": "notes",
+          "label": "Notes",
+          "type": "text",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "colis",
+      "version": 1,
+      "name": "Colis",
+      "description": "Transporteur et informations de suivi.",
+      "icon": "truck",
+      "color": "#EADAC7",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "transporteur",
+          "label": "Transporteur",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "numero",
+          "label": "Numéro de suivi",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "lien",
+          "label": "Lien de suivi",
+          "type": "web",
+          "default": ""
+        },
+        {
+          "id": "livraison",
+          "label": "Date prévue",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "etat",
+          "label": "État",
+          "type": "text",
+          "default": "En attente"
+        },
+        {
+          "id": "preuve",
+          "label": "Justificatif",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "entretien",
+      "version": 1,
+      "name": "Entretien",
+      "description": "Historique et prochaine intervention d’un objet ou véhicule.",
+      "icon": "tool",
+      "color": "#D3E5DE",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "objet",
+          "label": "Objet ou véhicule",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "derniere",
+          "label": "Dernière intervention",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "prochaine",
+          "label": "Prochaine échéance",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "travaux",
+          "label": "Travaux effectués",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "contact",
+          "label": "Téléphone du prestataire",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "factures",
+          "label": "Factures",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "pret-objet",
+      "version": 1,
+      "name": "Prêt / emprunt d’objet",
+      "description": "Objet, personne, retour et rappel facultatif à 9 h.",
+      "icon": "people",
+      "color": "#CEDFEC",
+      "baseType": "loan",
+      "fields": [
+        {
+          "id": "objet",
+          "label": "Objet",
+          "type": "text",
+          "default": "",
+          "key": "loanitem"
+        },
+        {
+          "id": "sens",
+          "label": "Prêté / emprunté",
+          "type": "text",
+          "default": "lent",
+          "key": "loanmode"
+        },
+        {
+          "id": "personne",
+          "label": "Personne",
+          "type": "text",
+          "default": "",
+          "key": "name"
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": "",
+          "key": "phone"
+        },
+        {
+          "id": "debut",
+          "label": "Date de début",
+          "type": "date",
+          "default": "",
+          "key": "startdate"
+        },
+        {
+          "id": "retour",
+          "label": "Retour prévu",
+          "type": "date",
+          "default": "",
+          "key": "returndate"
+        },
+        {
+          "id": "etat",
+          "label": "État",
+          "type": "text",
+          "default": "outstanding",
+          "key": "loanstatus"
+        },
+        {
+          "id": "photo",
+          "label": "Photo",
+          "type": "photo",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "pret-argent",
+      "version": 1,
+      "name": "Prêt / emprunt d’argent",
+      "description": "Montant, taux annuel et échéances ; aucun calcul financier automatique.",
+      "icon": "coins",
+      "color": "#E7DFC7",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "personne",
+          "label": "Personne ou organisme",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "sens",
+          "label": "Prêté ou emprunté",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "montant",
+          "label": "Montant",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "id": "devise",
+          "label": "Devise",
+          "type": "text",
+          "default": "EUR"
+        },
+        {
+          "id": "taux",
+          "label": "Taux annuel (%)",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "id": "duree",
+          "label": "Durée (mois)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "id": "mensualite",
+          "label": "Mensualité",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "id": "debut",
+          "label": "Date de début",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "contrat",
+          "label": "Contrat",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "note",
+      "version": 1,
+      "name": "Note",
+      "description": "Texte rapide, photos et fichiers.",
+      "icon": "note",
+      "color": "#F3E7CF",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "texte",
+          "label": "Texte",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "photos",
+          "label": "Photos",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "fichiers",
+          "label": "Fichiers",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "mesures",
+      "version": 1,
+      "name": "Mesures / tailles",
+      "description": "Vêtements, chaussures ou dimensions d’un meuble.",
+      "icon": "tag",
+      "color": "#E5D8D0",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "objet",
+          "label": "Personne ou objet",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "taille",
+          "label": "Taille",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "pointure",
+          "label": "Pointure",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "largeur",
+          "label": "Largeur et unité",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "hauteur",
+          "label": "Hauteur et unité",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "profondeur",
+          "label": "Profondeur et unité",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "photos",
+          "label": "Photos",
+          "type": "photo",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "etat-des-lieux",
+      "version": 1,
+      "name": "État des lieux",
+      "description": "Pièce, état, observations et photos.",
+      "icon": "house",
+      "color": "#E6D6C6",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "adresse",
+          "label": "Adresse",
+          "type": "postaladdress",
+          "default": ""
+        },
+        {
+          "id": "date",
+          "label": "Date",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "piece",
+          "label": "Pièce",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "etat",
+          "label": "État",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "observations",
+          "label": "Observations",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "photos",
+          "label": "Photos",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "rapport",
+          "label": "Rapport",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "piscine",
+      "version": 1,
+      "name": "Entretien piscine",
+      "description": "Relevés et interventions ; aucune recommandation de dosage automatique.",
+      "icon": "tool",
+      "color": "#CDE5EE",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "ph",
+          "label": "pH",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "id": "chlore",
+          "label": "Chlore (mg/L)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "id": "temperature",
+          "label": "Température (°C)",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "id": "travaux",
+          "label": "Intervention",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "prochaine",
+          "label": "Prochain entretien",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "photos",
+          "label": "Photos",
+          "type": "photo",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "inventaire",
+      "version": 1,
+      "name": "Inventaire du matériel",
+      "description": "Référence, quantité, emplacement et photo.",
+      "icon": "box",
+      "color": "#DCE1D0",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "materiel",
+          "label": "Matériel",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "reference",
+          "label": "Référence",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "quantite",
+          "label": "Quantité",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "id": "emplacement",
+          "label": "Emplacement",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "photos",
+          "label": "Photos",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "documents",
+          "label": "Documents",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}
