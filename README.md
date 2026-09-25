@@ -2,7 +2,7 @@
 
 Catalogue public de modèles de Kards. JSON uniquement : aucun script, aucune donnée utilisateur.
 
-Dans KARD°ASH : **K+ → Modèles à télécharger → Aperçu → Ajouter à mes modèles**. Les modèles installés restent disponibles hors connexion. Une mise à jour d’un modèle ne modifie jamais les Kards déjà créées.
+Dans KARD°ASH : **Configuration → Modèles à télécharger → Aperçu → Ajouter à mes modèles**. Les modèles installés restent disponibles hors connexion. Une mise à jour d’un modèle ne modifie jamais les Kards déjà créées.
 
 - [Recette de cuisine](models/recette.json) — Photo, ingrédients, quantités et étapes.
 - [Courses](models/courses.json) — Un article et sa quantité par ligne ; cases à cocher dans la Kard.
@@ -35,3 +35,9 @@ Les champs « échéance » et « répétition » des modèles génériques sont
 ## Validation
 
 Avec Node.js 22 ou supérieur, exécutez `node validate.cjs` à la racine du dépôt. GitHub vérifie également chaque contribution. Le catalogue utilisé par l’application est [catalog.json](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/catalog.json).
+
+## Proposer depuis KARD°ASH
+
+Dans l’aperçu d’un modèle ou lors de l’export de la structure d’une Kard, choisissez **Proposer au catalogue GitHub**. Vérifiez les libellés publics et confirmez, puis soumettez la proposition préremplie sur GitHub avec votre compte. Les valeurs et pièces jointes sont retirées. Pour un grand modèle, le bouton Copier permet de coller le JSON dans la proposition.
+
+Les propositions sont des issues examinées par les mainteneurs, qui peuvent ensuite ouvrir une pull request ajoutant le modèle et actualisant le catalogue. Aucune proposition n’est intégrée automatiquement.
