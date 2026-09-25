@@ -26,7 +26,7 @@ Téléchargez un JSON individuel puis utilisez **Mes modèles → Importer**. Po
 
 Un modèle contient `format: kardash-template`, `schemaVersion: 1`, un `id` stable, une `version` entière, `name`, `description`, une `icon` du jeu embarqué, une `color` hexadécimale, `baseType` (custom, recipe, shopping, loan), et `fields`.
 
-Chaque champ contient `id`, `label`, `type`, `default` et éventuellement `key` pour une fonction de la Kard de base. Types : text, number, date, time, datetime-local, photo, file, scan, email, phone, web, postaladdress, exactlocation, password. Aucun HTML, script ni image distante n’est interprété.
+Chaque champ contient `id`, `label`, `type`, `default` et éventuellement `key` pour une fonction de la Kard de base. Types : text, number, date, time, datetime-local, photo, file, scan, email, phone, web, postaladdress, exactlocation, password, iban, bic, last4, month, codevalue, codeformat, security, member, chip. Aucun HTML, script ni image distante n’est interprété.
 
 L’export de la structure depuis l’application efface les valeurs, fichiers, photos, coordonnées, icônes personnelles et résultats de contrôle. Il demande un nom de modèle distinct du titre de la Kard. Vérifiez aussi que les libellés de champs ne contiennent pas de données personnelles avant une publication.
 
