@@ -1,0 +1,97 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "equipement-client",
+  "version": 1,
+  "name": "Technique · Équipement client",
+  "description": "Dossier d’un équipement : client, accès, référence et consignes. Rattachez une Kard Intervention technique pour chaque passage.",
+  "icon": "tool",
+  "color": "#D3E5DE",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "client",
+      "label": "Client ou société",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "contact",
+      "label": "Contact sur site",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "telephone",
+      "label": "Téléphone",
+      "type": "phone",
+      "default": ""
+    },
+    {
+      "id": "email",
+      "label": "E-mail",
+      "type": "email",
+      "default": ""
+    },
+    {
+      "id": "adresse",
+      "label": "Adresse d’intervention",
+      "type": "postaladdress",
+      "default": ""
+    },
+    {
+      "id": "position",
+      "label": "Position exacte · Maps / Waze",
+      "type": "exactlocation",
+      "default": ""
+    },
+    {
+      "id": "equipement",
+      "label": "Équipement",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "marque-modele",
+      "label": "Marque et modèle",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "numero-serie",
+      "label": "Numéro de série",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "installation",
+      "label": "Date d’installation",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "acces",
+      "label": "Accès et consignes du site",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "prochaine-intervention",
+      "label": "Prochaine intervention",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "photo",
+      "label": "Photo de l’équipement",
+      "type": "photo",
+      "default": ""
+    },
+    {
+      "id": "documents",
+      "label": "Notices et documents",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}

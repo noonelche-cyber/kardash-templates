@@ -1,0 +1,115 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "chantier",
+  "version": 1,
+  "name": "Chantier · Dossier",
+  "description": "Contacts, accès, dates et documents du chantier. Rattachez des Kards Suivi de chantier pour les visites, tâches, livraisons ou réserves.",
+  "icon": "house",
+  "color": "#F2E3CB",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "reference",
+      "label": "Référence du chantier",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "client",
+      "label": "Client ou maître d’ouvrage",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "responsable",
+      "label": "Responsable du chantier",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "telephone",
+      "label": "Téléphone",
+      "type": "phone",
+      "default": ""
+    },
+    {
+      "id": "email",
+      "label": "E-mail",
+      "type": "email",
+      "default": ""
+    },
+    {
+      "id": "adresse",
+      "label": "Adresse du chantier",
+      "type": "postaladdress",
+      "default": ""
+    },
+    {
+      "id": "position",
+      "label": "Position exacte · Maps / Waze",
+      "type": "exactlocation",
+      "default": ""
+    },
+    {
+      "id": "debut",
+      "label": "Début prévu",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "fin",
+      "label": "Fin prévue",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "statut",
+      "label": "Statut · préparation / en cours / terminé",
+      "type": "text",
+      "default": "Préparation"
+    },
+    {
+      "id": "travaux",
+      "label": "Travaux prévus",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "intervenants",
+      "label": "Entreprises et intervenants",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "acces",
+      "label": "Accès et consignes du site",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "prochaine-action",
+      "label": "Prochaine action",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "echeance",
+      "label": "Prochaine échéance",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "photos",
+      "label": "Photos du chantier",
+      "type": "photo",
+      "default": ""
+    },
+    {
+      "id": "documents",
+      "label": "Plans, devis et documents",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}

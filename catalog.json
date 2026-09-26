@@ -5,6 +5,588 @@
     {
       "format": "kardash-template",
       "schemaVersion": 1,
+      "id": "client-prospect",
+      "version": 1,
+      "name": "Commercial · Client / prospect",
+      "description": "Coordonnées, besoins et prochaine relance. Rattachez une Kard Visite commerciale par rendez-vous pour conserver l’historique.",
+      "icon": "people",
+      "color": "#D3E5F3",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "societe",
+          "label": "Société",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "activite",
+          "label": "Activité",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "identifiant-fiscal",
+          "label": "TVA ou identifiant fiscal",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "contact",
+          "label": "Contact principal",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "fonction",
+          "label": "Fonction du contact",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "email",
+          "label": "E-mail",
+          "type": "email",
+          "default": ""
+        },
+        {
+          "id": "site",
+          "label": "Site web",
+          "type": "web",
+          "default": ""
+        },
+        {
+          "id": "adresse",
+          "label": "Adresse",
+          "type": "postaladdress",
+          "default": ""
+        },
+        {
+          "id": "position",
+          "label": "Position exacte · Maps / Waze",
+          "type": "exactlocation",
+          "default": ""
+        },
+        {
+          "id": "statut",
+          "label": "Statut · prospect / client / inactif",
+          "type": "text",
+          "default": "Prospect"
+        },
+        {
+          "id": "besoins",
+          "label": "Besoins et produits d’intérêt",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "conditions",
+          "label": "Conditions commerciales",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "prochaine-action",
+          "label": "Prochaine action",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "relance",
+          "label": "Date de relance",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "documents",
+          "label": "Offres et documents",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "visite-commerciale",
+      "version": 1,
+      "name": "Commercial · Visite",
+      "description": "Un rendez-vous et son compte rendu. À rattacher au Client / prospect ; recopiez la prochaine relance sur la Kard principale si nécessaire.",
+      "icon": "calendar",
+      "color": "#E0EBF5",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date de visite",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "heure",
+          "label": "Heure",
+          "type": "time",
+          "default": ""
+        },
+        {
+          "id": "interlocuteur",
+          "label": "Interlocuteur et fonction",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "objet",
+          "label": "Objet de la visite",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "besoins",
+          "label": "Besoins exprimés",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "produits",
+          "label": "Produits présentés et échantillons",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "compte-rendu",
+          "label": "Compte rendu et objections",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "engagements",
+          "label": "Engagements et offre à préparer",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "prochaine-action",
+          "label": "Prochaine action",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "relance",
+          "label": "Date de relance",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "photos",
+          "label": "Photos",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "documents",
+          "label": "Documents de la visite",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "equipement-client",
+      "version": 1,
+      "name": "Technique · Équipement client",
+      "description": "Dossier d’un équipement : client, accès, référence et consignes. Rattachez une Kard Intervention technique pour chaque passage.",
+      "icon": "tool",
+      "color": "#D3E5DE",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "client",
+          "label": "Client ou société",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "contact",
+          "label": "Contact sur site",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "email",
+          "label": "E-mail",
+          "type": "email",
+          "default": ""
+        },
+        {
+          "id": "adresse",
+          "label": "Adresse d’intervention",
+          "type": "postaladdress",
+          "default": ""
+        },
+        {
+          "id": "position",
+          "label": "Position exacte · Maps / Waze",
+          "type": "exactlocation",
+          "default": ""
+        },
+        {
+          "id": "equipement",
+          "label": "Équipement",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "marque-modele",
+          "label": "Marque et modèle",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "numero-serie",
+          "label": "Numéro de série",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "installation",
+          "label": "Date d’installation",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "acces",
+          "label": "Accès et consignes du site",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "prochaine-intervention",
+          "label": "Prochaine intervention",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "photo",
+          "label": "Photo de l’équipement",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "documents",
+          "label": "Notices et documents",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "intervention-technique",
+      "version": 1,
+      "name": "Technique · Intervention",
+      "description": "Diagnostic, travaux, pièces et photos d’un passage. À rattacher à la Kard Équipement client pour constituer son historique.",
+      "icon": "tool",
+      "color": "#E3EDE5",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "date",
+          "label": "Date d’intervention",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "technicien",
+          "label": "Technicien",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "motif",
+          "label": "Motif de l’intervention",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "diagnostic",
+          "label": "Diagnostic",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "travaux",
+          "label": "Travaux effectués",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "pieces",
+          "label": "Pièces et quantités utilisées",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "duree",
+          "label": "Durée · minutes",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "id": "resultat",
+          "label": "Résultat · terminé / à reprendre",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "avant",
+          "label": "Photos avant",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "apres",
+          "label": "Photos après",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "suite",
+          "label": "Suite à donner",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "prochaine-date",
+          "label": "Prochaine intervention",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "documents",
+          "label": "Rapport, devis et facture",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "chantier",
+      "version": 1,
+      "name": "Chantier · Dossier",
+      "description": "Contacts, accès, dates et documents du chantier. Rattachez des Kards Suivi de chantier pour les visites, tâches, livraisons ou réserves.",
+      "icon": "house",
+      "color": "#F2E3CB",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "reference",
+          "label": "Référence du chantier",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "client",
+          "label": "Client ou maître d’ouvrage",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "responsable",
+          "label": "Responsable du chantier",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "email",
+          "label": "E-mail",
+          "type": "email",
+          "default": ""
+        },
+        {
+          "id": "adresse",
+          "label": "Adresse du chantier",
+          "type": "postaladdress",
+          "default": ""
+        },
+        {
+          "id": "position",
+          "label": "Position exacte · Maps / Waze",
+          "type": "exactlocation",
+          "default": ""
+        },
+        {
+          "id": "debut",
+          "label": "Début prévu",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "fin",
+          "label": "Fin prévue",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "statut",
+          "label": "Statut · préparation / en cours / terminé",
+          "type": "text",
+          "default": "Préparation"
+        },
+        {
+          "id": "travaux",
+          "label": "Travaux prévus",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "intervenants",
+          "label": "Entreprises et intervenants",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "acces",
+          "label": "Accès et consignes du site",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "prochaine-action",
+          "label": "Prochaine action",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "echeance",
+          "label": "Prochaine échéance",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "photos",
+          "label": "Photos du chantier",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "documents",
+          "label": "Plans, devis et documents",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "suivi-chantier",
+      "version": 1,
+      "name": "Chantier · Suivi",
+      "description": "Une visite, une tâche, une livraison ou une réserve par Kard. À rattacher au dossier Chantier et à actualiser jusqu’à sa clôture.",
+      "icon": "note",
+      "color": "#F5EBDD",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "nature",
+          "label": "Nature · visite / tâche / livraison / réserve",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "date",
+          "label": "Date du constat",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "zone",
+          "label": "Zone, pièce ou lot concerné",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "responsable",
+          "label": "Responsable de l’action",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "description",
+          "label": "Constat ou travail à réaliser",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "statut",
+          "label": "Statut · à faire / en cours / terminé",
+          "type": "text",
+          "default": "À faire"
+        },
+        {
+          "id": "echeance",
+          "label": "Échéance",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "cloture",
+          "label": "Date de clôture",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "compte-rendu",
+          "label": "Compte rendu ou résultat",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "photos",
+          "label": "Photos",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "documents",
+          "label": "Documents",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
       "id": "recette",
       "version": 1,
       "name": "Recette de cuisine",

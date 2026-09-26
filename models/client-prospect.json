@@ -1,0 +1,109 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "client-prospect",
+  "version": 1,
+  "name": "Commercial · Client / prospect",
+  "description": "Coordonnées, besoins et prochaine relance. Rattachez une Kard Visite commerciale par rendez-vous pour conserver l’historique.",
+  "icon": "people",
+  "color": "#D3E5F3",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "societe",
+      "label": "Société",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "activite",
+      "label": "Activité",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "identifiant-fiscal",
+      "label": "TVA ou identifiant fiscal",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "contact",
+      "label": "Contact principal",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "fonction",
+      "label": "Fonction du contact",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "telephone",
+      "label": "Téléphone",
+      "type": "phone",
+      "default": ""
+    },
+    {
+      "id": "email",
+      "label": "E-mail",
+      "type": "email",
+      "default": ""
+    },
+    {
+      "id": "site",
+      "label": "Site web",
+      "type": "web",
+      "default": ""
+    },
+    {
+      "id": "adresse",
+      "label": "Adresse",
+      "type": "postaladdress",
+      "default": ""
+    },
+    {
+      "id": "position",
+      "label": "Position exacte · Maps / Waze",
+      "type": "exactlocation",
+      "default": ""
+    },
+    {
+      "id": "statut",
+      "label": "Statut · prospect / client / inactif",
+      "type": "text",
+      "default": "Prospect"
+    },
+    {
+      "id": "besoins",
+      "label": "Besoins et produits d’intérêt",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "conditions",
+      "label": "Conditions commerciales",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "prochaine-action",
+      "label": "Prochaine action",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "relance",
+      "label": "Date de relance",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "documents",
+      "label": "Offres et documents",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}

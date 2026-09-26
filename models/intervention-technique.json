@@ -1,0 +1,91 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "intervention-technique",
+  "version": 1,
+  "name": "Technique · Intervention",
+  "description": "Diagnostic, travaux, pièces et photos d’un passage. À rattacher à la Kard Équipement client pour constituer son historique.",
+  "icon": "tool",
+  "color": "#E3EDE5",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date d’intervention",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "technicien",
+      "label": "Technicien",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "motif",
+      "label": "Motif de l’intervention",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "diagnostic",
+      "label": "Diagnostic",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "travaux",
+      "label": "Travaux effectués",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "pieces",
+      "label": "Pièces et quantités utilisées",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "duree",
+      "label": "Durée · minutes",
+      "type": "number",
+      "default": ""
+    },
+    {
+      "id": "resultat",
+      "label": "Résultat · terminé / à reprendre",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "avant",
+      "label": "Photos avant",
+      "type": "photo",
+      "default": ""
+    },
+    {
+      "id": "apres",
+      "label": "Photos après",
+      "type": "photo",
+      "default": ""
+    },
+    {
+      "id": "suite",
+      "label": "Suite à donner",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "prochaine-date",
+      "label": "Prochaine intervention",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "documents",
+      "label": "Rapport, devis et facture",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}

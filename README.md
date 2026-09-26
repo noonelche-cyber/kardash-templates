@@ -2,7 +2,29 @@
 
 Catalogue public de modèles de Kards. JSON uniquement : aucun script, aucune donnée utilisateur.
 
-Dans KARD°ASH : **Configuration → Modèles à télécharger → Aperçu → Ajouter à mes modèles**. Les modèles installés restent disponibles hors connexion. Une mise à jour d’un modèle ne modifie jamais les Kards déjà créées.
+Le catalogue privilégie les **usages professionnels** : suivi de clients, interventions, chantiers, documents et historique. Les modèles personnels restent disponibles.
+
+Sur Windows, **Configuration → Modèles à télécharger** ouvre ce dépôt dans le navigateur. Téléchargez un JSON individuel (lien « Télécharger » ci-dessous, puis enregistrer le fichier) et importez-le via **Mes modèles → Importer**. Dans les versions proposant le catalogue intégré : aperçu, puis **Ajouter à mes modèles**. Les modèles installés restent utilisables hors connexion ; leurs mises à jour ne modifient pas les Kards existantes.
+
+## Modèles professionnels
+
+Trois ensembles, chacun avec une Kard principale et un modèle de suivi :
+
+| Usage | Kard principale | Historique / sous-Kard |
+|---|---|---|
+| Commercial | [Client / prospect](models/client-prospect.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/client-prospect.json) | [Visite commerciale](models/visite-commerciale.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/visite-commerciale.json) |
+| Technique | [Équipement client](models/equipement-client.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/equipement-client.json) | [Intervention technique](models/intervention-technique.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/intervention-technique.json) |
+| Chantier | [Dossier chantier](models/chantier.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/chantier.json) | [Suivi de chantier](models/suivi-chantier.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/suivi-chantier.json) |
+
+### Organiser l’historique
+
+1. Importez les deux modèles de l’ensemble choisi.
+2. Créez la Kard principale, puis une Kard de suivi à chaque visite, intervention ou étape.
+3. Dans les versions qui prennent en charge les sous-Kards (Windows à partir du build 68), ouvrez la fiche principale et utilisez **Sous-Kards → rattacher une Kard existante** pour ajouter le suivi.
+
+Les JSON décrivent les champs d’une seule Kard : ils ne créent pas automatiquement une hiérarchie. Le rattachement conserve les Kards existantes. La prochaine relance ou échéance peut être renseignée sur la Kard principale pour être visible rapidement ; elle n’est pas recopiée automatiquement depuis les sous-Kards. Les dates de ces modèles ne déclenchent pas d’alarme automatique. Les statuts et natures proposés dans les libellés sont des textes libres, pas des menus déroulants. L’identifiant fiscal est un champ libre ; ce modèle n’active pas un contrôle VIES.
+
+## Autres modèles
 
 - [Recette de cuisine](models/recette.json) — Photo, ingrédients, quantités et étapes.
 - [Courses](models/courses.json) — Un article et sa quantité par ligne ; cases à cocher dans la Kard.

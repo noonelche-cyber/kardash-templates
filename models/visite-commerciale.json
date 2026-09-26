@@ -1,0 +1,85 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "visite-commerciale",
+  "version": 1,
+  "name": "Commercial · Visite",
+  "description": "Un rendez-vous et son compte rendu. À rattacher au Client / prospect ; recopiez la prochaine relance sur la Kard principale si nécessaire.",
+  "icon": "calendar",
+  "color": "#E0EBF5",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date de visite",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "heure",
+      "label": "Heure",
+      "type": "time",
+      "default": ""
+    },
+    {
+      "id": "interlocuteur",
+      "label": "Interlocuteur et fonction",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "objet",
+      "label": "Objet de la visite",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "besoins",
+      "label": "Besoins exprimés",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "produits",
+      "label": "Produits présentés et échantillons",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "compte-rendu",
+      "label": "Compte rendu et objections",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "engagements",
+      "label": "Engagements et offre à préparer",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "prochaine-action",
+      "label": "Prochaine action",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "relance",
+      "label": "Date de relance",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "photos",
+      "label": "Photos",
+      "type": "photo",
+      "default": ""
+    },
+    {
+      "id": "documents",
+      "label": "Documents de la visite",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}

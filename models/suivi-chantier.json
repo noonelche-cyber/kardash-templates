@@ -1,0 +1,85 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "suivi-chantier",
+  "version": 1,
+  "name": "Chantier · Suivi",
+  "description": "Une visite, une tâche, une livraison ou une réserve par Kard. À rattacher au dossier Chantier et à actualiser jusqu’à sa clôture.",
+  "icon": "note",
+  "color": "#F5EBDD",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "nature",
+      "label": "Nature · visite / tâche / livraison / réserve",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "date",
+      "label": "Date du constat",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "zone",
+      "label": "Zone, pièce ou lot concerné",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "responsable",
+      "label": "Responsable de l’action",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "telephone",
+      "label": "Téléphone",
+      "type": "phone",
+      "default": ""
+    },
+    {
+      "id": "description",
+      "label": "Constat ou travail à réaliser",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "statut",
+      "label": "Statut · à faire / en cours / terminé",
+      "type": "text",
+      "default": "À faire"
+    },
+    {
+      "id": "echeance",
+      "label": "Échéance",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "cloture",
+      "label": "Date de clôture",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "compte-rendu",
+      "label": "Compte rendu ou résultat",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "photos",
+      "label": "Photos",
+      "type": "photo",
+      "default": ""
+    },
+    {
+      "id": "documents",
+      "label": "Documents",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}
