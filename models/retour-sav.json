@@ -1,0 +1,103 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "retour-sav",
+  "version": 1,
+  "name": "Retour / SAV",
+  "description": "Produit, vendeur, délai de retour ou de garantie et suivi de la demande. Le délai dépend du vendeur et du pays : vérifiez-le sur votre facture.",
+  "icon": "box",
+  "color": "#E2DCEB",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "produit",
+      "label": "Produit",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "vendeur",
+      "label": "Vendeur / marque",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "commande",
+      "label": "N° de commande / facture",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "achat",
+      "label": "Date d’achat",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "limite",
+      "label": "Date limite de retour ou de garantie",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "motif",
+      "label": "Motif · retour / échange / réparation / remboursement",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "dossier",
+      "label": "N° de dossier / RMA",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "contact",
+      "label": "Service client",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "telephone",
+      "label": "Téléphone",
+      "type": "phone",
+      "default": ""
+    },
+    {
+      "id": "email",
+      "label": "E-mail",
+      "type": "email",
+      "default": ""
+    },
+    {
+      "id": "envoi",
+      "label": "Date d’envoi",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "suivi",
+      "label": "Transporteur et n° de suivi",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "statut",
+      "label": "Statut · à envoyer / envoyé / résolu",
+      "type": "text",
+      "default": "À envoyer"
+    },
+    {
+      "id": "montant",
+      "label": "Montant attendu et devise",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "preuves",
+      "label": "Facture, photos et échanges",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}

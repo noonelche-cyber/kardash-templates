@@ -1,0 +1,103 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "fournisseur",
+  "version": 1,
+  "name": "Pro · Fournisseur",
+  "description": "Coordonnées, compte client, conditions et délais. Les prix et remises sont des textes libres.",
+  "icon": "truck",
+  "color": "#E3E8D5",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "societe",
+      "label": "Société",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "produits",
+      "label": "Produits / services",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "commercial",
+      "label": "Commercial ou interlocuteur",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "telephone",
+      "label": "Téléphone",
+      "type": "phone",
+      "default": ""
+    },
+    {
+      "id": "email",
+      "label": "E-mail",
+      "type": "email",
+      "default": ""
+    },
+    {
+      "id": "site",
+      "label": "Site web / commande en ligne",
+      "type": "web",
+      "default": ""
+    },
+    {
+      "id": "adresse",
+      "label": "Adresse",
+      "type": "postaladdress",
+      "default": ""
+    },
+    {
+      "id": "compte",
+      "label": "Numéro de compte client",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "identifiant",
+      "label": "Identifiant fiscal du fournisseur",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "conditions",
+      "label": "Conditions de paiement et remises",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "devise",
+      "label": "Devise",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "delai",
+      "label": "Délai de livraison habituel",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "commande-min",
+      "label": "Minimum de commande",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "derniere-commande",
+      "label": "Dernière commande",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "catalogue",
+      "label": "Catalogue, tarifs et contrats",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}

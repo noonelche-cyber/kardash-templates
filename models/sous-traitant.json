@@ -1,0 +1,127 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "sous-traitant",
+  "version": 1,
+  "name": "Pro · Sous-traitant / prestataire",
+  "description": "Société, contact, métier et documents de conformité avec leurs dates d’expiration (assurance, licence, attestations exigées selon le pays).",
+  "icon": "people",
+  "color": "#DCE3F0",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "societe",
+      "label": "Société ou nom",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "metier",
+      "label": "Métier / spécialité",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "identifiant",
+      "label": "Identifiant d’entreprise / fiscal",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "contact",
+      "label": "Contact principal",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "telephone",
+      "label": "Téléphone",
+      "type": "phone",
+      "default": ""
+    },
+    {
+      "id": "email",
+      "label": "E-mail",
+      "type": "email",
+      "default": ""
+    },
+    {
+      "id": "adresse",
+      "label": "Adresse",
+      "type": "postaladdress",
+      "default": ""
+    },
+    {
+      "id": "statut",
+      "label": "Statut · actif / en essai / à éviter",
+      "type": "text",
+      "default": "Actif"
+    },
+    {
+      "id": "tarifs",
+      "label": "Tarifs et conditions",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "assurance",
+      "label": "Assurance responsabilité · assureur et n° de police",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "assurance-fin",
+      "label": "Assurance · expiration",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "assurance-doc",
+      "label": "Attestation d’assurance",
+      "type": "file",
+      "default": ""
+    },
+    {
+      "id": "licence",
+      "label": "Licence / certification · nature et numéro",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "licence-fin",
+      "label": "Licence · expiration",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "licence-doc",
+      "label": "Licence / certification",
+      "type": "file",
+      "default": ""
+    },
+    {
+      "id": "conformite",
+      "label": "Autre document de conformité · nature",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "conformite-fin",
+      "label": "Autre document · expiration",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "conformite-doc",
+      "label": "Autre document",
+      "type": "file",
+      "default": ""
+    },
+    {
+      "id": "evaluation",
+      "label": "Évaluation et remarques",
+      "type": "text",
+      "default": ""
+    }
+  ]
+}

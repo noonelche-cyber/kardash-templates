@@ -587,6 +587,327 @@
     {
       "format": "kardash-template",
       "schemaVersion": 1,
+      "id": "sous-traitant",
+      "version": 1,
+      "name": "Pro · Sous-traitant / prestataire",
+      "description": "Société, contact, métier et documents de conformité avec leurs dates d’expiration (assurance, licence, attestations exigées selon le pays).",
+      "icon": "people",
+      "color": "#DCE3F0",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "societe",
+          "label": "Société ou nom",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "metier",
+          "label": "Métier / spécialité",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "identifiant",
+          "label": "Identifiant d’entreprise / fiscal",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "contact",
+          "label": "Contact principal",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "email",
+          "label": "E-mail",
+          "type": "email",
+          "default": ""
+        },
+        {
+          "id": "adresse",
+          "label": "Adresse",
+          "type": "postaladdress",
+          "default": ""
+        },
+        {
+          "id": "statut",
+          "label": "Statut · actif / en essai / à éviter",
+          "type": "text",
+          "default": "Actif"
+        },
+        {
+          "id": "tarifs",
+          "label": "Tarifs et conditions",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "assurance",
+          "label": "Assurance responsabilité · assureur et n° de police",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "assurance-fin",
+          "label": "Assurance · expiration",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "assurance-doc",
+          "label": "Attestation d’assurance",
+          "type": "file",
+          "default": ""
+        },
+        {
+          "id": "licence",
+          "label": "Licence / certification · nature et numéro",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "licence-fin",
+          "label": "Licence · expiration",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "licence-doc",
+          "label": "Licence / certification",
+          "type": "file",
+          "default": ""
+        },
+        {
+          "id": "conformite",
+          "label": "Autre document de conformité · nature",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "conformite-fin",
+          "label": "Autre document · expiration",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "conformite-doc",
+          "label": "Autre document",
+          "type": "file",
+          "default": ""
+        },
+        {
+          "id": "evaluation",
+          "label": "Évaluation et remarques",
+          "type": "text",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "fournisseur",
+      "version": 1,
+      "name": "Pro · Fournisseur",
+      "description": "Coordonnées, compte client, conditions et délais. Les prix et remises sont des textes libres.",
+      "icon": "truck",
+      "color": "#E3E8D5",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "societe",
+          "label": "Société",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "produits",
+          "label": "Produits / services",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "commercial",
+          "label": "Commercial ou interlocuteur",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "email",
+          "label": "E-mail",
+          "type": "email",
+          "default": ""
+        },
+        {
+          "id": "site",
+          "label": "Site web / commande en ligne",
+          "type": "web",
+          "default": ""
+        },
+        {
+          "id": "adresse",
+          "label": "Adresse",
+          "type": "postaladdress",
+          "default": ""
+        },
+        {
+          "id": "compte",
+          "label": "Numéro de compte client",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "identifiant",
+          "label": "Identifiant fiscal du fournisseur",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "conditions",
+          "label": "Conditions de paiement et remises",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "devise",
+          "label": "Devise",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "delai",
+          "label": "Délai de livraison habituel",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "commande-min",
+          "label": "Minimum de commande",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "derniere-commande",
+          "label": "Dernière commande",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "catalogue",
+          "label": "Catalogue, tarifs et contrats",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "acces-site",
+      "version": 1,
+      "name": "Pro · Accès site",
+      "description": "Comment entrer sur un site client : adresse, position exacte, horaires, contacts et consignes. Les codes d’accès ne sont pas chiffrés ; masquez-les ou utilisez le coffre.",
+      "icon": "house",
+      "color": "#E8E0D3",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "site",
+          "label": "Nom du site / client",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "adresse",
+          "label": "Adresse",
+          "type": "postaladdress",
+          "default": ""
+        },
+        {
+          "id": "position",
+          "label": "Position exacte · Maps / Waze",
+          "type": "exactlocation",
+          "default": ""
+        },
+        {
+          "id": "entree",
+          "label": "Entrée à utiliser · porte, quai, étage",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "horaires",
+          "label": "Horaires d’accès",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "contact",
+          "label": "Contact sur place / gardien",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone du contact",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "code",
+          "label": "Code d’accès / digicode",
+          "type": "password",
+          "default": ""
+        },
+        {
+          "id": "cles",
+          "label": "Clés ou badge · où les récupérer",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "stationnement",
+          "label": "Stationnement",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "consignes",
+          "label": "Consignes de sécurité / EPI",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "photos",
+          "label": "Photos de l’entrée et du parcours",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "plan",
+          "label": "Plan ou instructions",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
       "id": "recette",
       "version": 1,
       "name": "Recette de cuisine",
@@ -1260,6 +1581,418 @@
         {
           "id": "documents",
           "label": "Documents",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "retour-sav",
+      "version": 1,
+      "name": "Retour / SAV",
+      "description": "Produit, vendeur, délai de retour ou de garantie et suivi de la demande. Le délai dépend du vendeur et du pays : vérifiez-le sur votre facture.",
+      "icon": "box",
+      "color": "#E2DCEB",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "produit",
+          "label": "Produit",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "vendeur",
+          "label": "Vendeur / marque",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "commande",
+          "label": "N° de commande / facture",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "achat",
+          "label": "Date d’achat",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "limite",
+          "label": "Date limite de retour ou de garantie",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "motif",
+          "label": "Motif · retour / échange / réparation / remboursement",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "dossier",
+          "label": "N° de dossier / RMA",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "contact",
+          "label": "Service client",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "email",
+          "label": "E-mail",
+          "type": "email",
+          "default": ""
+        },
+        {
+          "id": "envoi",
+          "label": "Date d’envoi",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "suivi",
+          "label": "Transporteur et n° de suivi",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "statut",
+          "label": "Statut · à envoyer / envoyé / résolu",
+          "type": "text",
+          "default": "À envoyer"
+        },
+        {
+          "id": "montant",
+          "label": "Montant attendu et devise",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "preuves",
+          "label": "Facture, photos et échanges",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "demarche",
+      "version": 1,
+      "name": "Démarche administrative",
+      "description": "Organisme, numéro de dossier, pièces envoyées et prochaine relance. Valable pour toute administration ou tout pays.",
+      "icon": "folder",
+      "color": "#DDE5EA",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "objet",
+          "label": "Objet de la démarche",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "organisme",
+          "label": "Organisme / administration",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "pays",
+          "label": "Pays",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "dossier",
+          "label": "N° de dossier / référence",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "interlocuteur",
+          "label": "Interlocuteur",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "email",
+          "label": "E-mail",
+          "type": "email",
+          "default": ""
+        },
+        {
+          "id": "site",
+          "label": "Portail en ligne",
+          "type": "web",
+          "default": ""
+        },
+        {
+          "id": "depot",
+          "label": "Date de dépôt",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "pieces",
+          "label": "Pièces fournies",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "statut",
+          "label": "Statut · en préparation / déposé / accepté / refusé",
+          "type": "text",
+          "default": "En préparation"
+        },
+        {
+          "id": "relance",
+          "label": "Prochaine relance",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "historique",
+          "label": "Historique des échanges",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "documents",
+          "label": "Courriers et justificatifs",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "sinistre",
+      "version": 1,
+      "name": "Sinistre / réclamation",
+      "description": "Déclaration à un assureur ou réclamation : dates, références, expert, montants et pièces. Aucune démarche n’est envoyée automatiquement.",
+      "icon": "note",
+      "color": "#EADCD6",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "objet",
+          "label": "Nature du sinistre / de la réclamation",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "date",
+          "label": "Date des faits",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "lieu",
+          "label": "Lieu",
+          "type": "postaladdress",
+          "default": ""
+        },
+        {
+          "id": "assureur",
+          "label": "Assureur / organisme",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "police",
+          "label": "N° de police / contrat",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "dossier",
+          "label": "N° de sinistre / dossier",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "gestionnaire",
+          "label": "Gestionnaire",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "telephone",
+          "label": "Téléphone",
+          "type": "phone",
+          "default": ""
+        },
+        {
+          "id": "email",
+          "label": "E-mail",
+          "type": "email",
+          "default": ""
+        },
+        {
+          "id": "declaration",
+          "label": "Date de déclaration",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "expert",
+          "label": "Expert et rendez-vous",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "montant",
+          "label": "Montant estimé et devise",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "statut",
+          "label": "Statut · déclaré / en expertise / indemnisé / clos",
+          "type": "text",
+          "default": "Déclaré"
+        },
+        {
+          "id": "relance",
+          "label": "Prochaine relance",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "photos",
+          "label": "Photos des dommages",
+          "type": "photo",
+          "default": ""
+        },
+        {
+          "id": "documents",
+          "label": "Devis, factures et courriers",
+          "type": "file",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "format": "kardash-template",
+      "schemaVersion": 1,
+      "id": "visa",
+      "version": 1,
+      "name": "Visa / titre de séjour",
+      "description": "Pays, type, numéro et dates de validité d’un visa, permis de séjour ou de travail. Les règles d’entrée varient : vérifiez-les auprès des autorités.",
+      "icon": "plane",
+      "color": "#D6E4EC",
+      "baseType": "custom",
+      "fields": [
+        {
+          "id": "pays",
+          "label": "Pays de délivrance",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "type",
+          "label": "Type · visa / séjour / travail / autorisation électronique",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "titulaire",
+          "label": "Titulaire",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "numero",
+          "label": "Numéro",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "passeport",
+          "label": "Passeport associé · numéro",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "passeport-fin",
+          "label": "Passeport · expiration",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "delivrance",
+          "label": "Date de délivrance",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "debut",
+          "label": "Valable à partir du",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "fin",
+          "label": "Expiration",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "entrees",
+          "label": "Entrées autorisées · unique / multiple",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "duree",
+          "label": "Durée de séjour autorisée",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "conditions",
+          "label": "Conditions et restrictions",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "renouvellement",
+          "label": "Démarrer le renouvellement avant le",
+          "type": "date",
+          "default": ""
+        },
+        {
+          "id": "autorite",
+          "label": "Autorité / ambassade · contact",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "id": "document",
+          "label": "Copie du visa ou du titre",
           "type": "file",
           "default": ""
         }

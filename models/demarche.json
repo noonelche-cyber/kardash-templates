@@ -1,0 +1,97 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "demarche",
+  "version": 1,
+  "name": "Démarche administrative",
+  "description": "Organisme, numéro de dossier, pièces envoyées et prochaine relance. Valable pour toute administration ou tout pays.",
+  "icon": "folder",
+  "color": "#DDE5EA",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "objet",
+      "label": "Objet de la démarche",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "organisme",
+      "label": "Organisme / administration",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "pays",
+      "label": "Pays",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "dossier",
+      "label": "N° de dossier / référence",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "interlocuteur",
+      "label": "Interlocuteur",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "telephone",
+      "label": "Téléphone",
+      "type": "phone",
+      "default": ""
+    },
+    {
+      "id": "email",
+      "label": "E-mail",
+      "type": "email",
+      "default": ""
+    },
+    {
+      "id": "site",
+      "label": "Portail en ligne",
+      "type": "web",
+      "default": ""
+    },
+    {
+      "id": "depot",
+      "label": "Date de dépôt",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "pieces",
+      "label": "Pièces fournies",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "statut",
+      "label": "Statut · en préparation / déposé / accepté / refusé",
+      "type": "text",
+      "default": "En préparation"
+    },
+    {
+      "id": "relance",
+      "label": "Prochaine relance",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "historique",
+      "label": "Historique des échanges",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "documents",
+      "label": "Courriers et justificatifs",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}

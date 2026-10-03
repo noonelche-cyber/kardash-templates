@@ -16,6 +16,14 @@ Trois ensembles, chacun avec une Kard principale et un modèle de suivi :
 | Technique | [Équipement client](models/equipement-client.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/equipement-client.json) | [Intervention technique](models/intervention-technique.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/intervention-technique.json) |
 | Chantier | [Dossier chantier](models/chantier.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/chantier.json) | [Suivi de chantier](models/suivi-chantier.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/suivi-chantier.json) |
 
+### Partenaires et sites
+
+Modèles autonomes, utilisables dans tous les pays : les identifiants, devises et documents exigés sont des champs libres.
+
+- [Sous-traitant / prestataire](models/sous-traitant.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/sous-traitant.json) — Contact, métier et documents de conformité (assurance, licence, autre) avec leur date d’expiration.
+- [Fournisseur](models/fournisseur.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/fournisseur.json) — Compte client, conditions de paiement, devise, délais et catalogue.
+- [Accès site](models/acces-site.json) · [Télécharger](https://raw.githubusercontent.com/noonelche-cyber/kardash-templates/main/models/acces-site.json) — Adresse, position exacte, entrée, horaires, contact, code d’accès et consignes de sécurité.
+
 ### Organiser l’historique
 
 1. Importez les deux modèles de l’ensemble choisi.
@@ -39,6 +47,10 @@ Les JSON décrivent les champs d’une seule Kard : ils ne créent pas automatiq
 - [État des lieux](models/etat-des-lieux.json) — Pièce, état, observations et photos.
 - [Entretien piscine](models/piscine.json) — Relevés et interventions ; aucune recommandation de dosage automatique.
 - [Inventaire du matériel](models/inventaire.json) — Référence, quantité, emplacement et photo.
+- [Retour / SAV](models/retour-sav.json) — Délai de retour ou de garantie, n° de dossier et suivi d’envoi ; délai à vérifier selon le vendeur et le pays.
+- [Démarche administrative](models/demarche.json) — Organisme, pays, n° de dossier, pièces fournies et prochaine relance.
+- [Sinistre / réclamation](models/sinistre.json) — Assureur, n° de sinistre, expert, montants, photos et pièces.
+- [Visa / titre de séjour](models/visa.json) — Pays, type, validité, entrées autorisées, passeport associé et date de renouvellement.
 
 ## Importer / proposer un modèle
 

@@ -1,0 +1,103 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "visa",
+  "version": 1,
+  "name": "Visa / titre de séjour",
+  "description": "Pays, type, numéro et dates de validité d’un visa, permis de séjour ou de travail. Les règles d’entrée varient : vérifiez-les auprès des autorités.",
+  "icon": "plane",
+  "color": "#D6E4EC",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "pays",
+      "label": "Pays de délivrance",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "type",
+      "label": "Type · visa / séjour / travail / autorisation électronique",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "titulaire",
+      "label": "Titulaire",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "numero",
+      "label": "Numéro",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "passeport",
+      "label": "Passeport associé · numéro",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "passeport-fin",
+      "label": "Passeport · expiration",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "delivrance",
+      "label": "Date de délivrance",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "debut",
+      "label": "Valable à partir du",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "fin",
+      "label": "Expiration",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "entrees",
+      "label": "Entrées autorisées · unique / multiple",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "duree",
+      "label": "Durée de séjour autorisée",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "conditions",
+      "label": "Conditions et restrictions",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "renouvellement",
+      "label": "Démarrer le renouvellement avant le",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "autorite",
+      "label": "Autorité / ambassade · contact",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "document",
+      "label": "Copie du visa ou du titre",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}

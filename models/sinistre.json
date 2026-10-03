@@ -1,0 +1,109 @@
+{
+  "format": "kardash-template",
+  "schemaVersion": 1,
+  "id": "sinistre",
+  "version": 1,
+  "name": "Sinistre / réclamation",
+  "description": "Déclaration à un assureur ou réclamation : dates, références, expert, montants et pièces. Aucune démarche n’est envoyée automatiquement.",
+  "icon": "note",
+  "color": "#EADCD6",
+  "baseType": "custom",
+  "fields": [
+    {
+      "id": "objet",
+      "label": "Nature du sinistre / de la réclamation",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "date",
+      "label": "Date des faits",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "lieu",
+      "label": "Lieu",
+      "type": "postaladdress",
+      "default": ""
+    },
+    {
+      "id": "assureur",
+      "label": "Assureur / organisme",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "police",
+      "label": "N° de police / contrat",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "dossier",
+      "label": "N° de sinistre / dossier",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "gestionnaire",
+      "label": "Gestionnaire",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "telephone",
+      "label": "Téléphone",
+      "type": "phone",
+      "default": ""
+    },
+    {
+      "id": "email",
+      "label": "E-mail",
+      "type": "email",
+      "default": ""
+    },
+    {
+      "id": "declaration",
+      "label": "Date de déclaration",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "expert",
+      "label": "Expert et rendez-vous",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "montant",
+      "label": "Montant estimé et devise",
+      "type": "text",
+      "default": ""
+    },
+    {
+      "id": "statut",
+      "label": "Statut · déclaré / en expertise / indemnisé / clos",
+      "type": "text",
+      "default": "Déclaré"
+    },
+    {
+      "id": "relance",
+      "label": "Prochaine relance",
+      "type": "date",
+      "default": ""
+    },
+    {
+      "id": "photos",
+      "label": "Photos des dommages",
+      "type": "photo",
+      "default": ""
+    },
+    {
+      "id": "documents",
+      "label": "Devis, factures et courriers",
+      "type": "file",
+      "default": ""
+    }
+  ]
+}
